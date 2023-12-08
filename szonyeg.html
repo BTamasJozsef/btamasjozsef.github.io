@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Sierpienski szőnyeg - QTMKZZ</title>
+	<style>
+	canvas{
+		rotate: 180deg;
+	}
+	body {
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+    <canvas id="canvas" width="800" height="800"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const context = canvas.getContext('2d');
+
+        function drawSierpinskiTriangle(x, y, size, order) {
+            if (order === 0) {
+                const height = (Math.sqrt(3) / 2) * size;
+                context.beginPath();
+                context.moveTo(x, y);
+                context.lineTo(x + size, y);
+                context.lineTo(x + size / 2, y + height);
+                context.closePath();
+                context.fill();
+            } else {
+                size /= 2;
+                order -= 1;
+                drawSierpinskiTriangle(x, y, size, order);
+                drawSierpinskiTriangle(x + size, y, size, order);
+                drawSierpinskiTriangle(x + size / 2, y + (Math.sqrt(3) / 2) * size, size, order);
+            }
+        }
+		
+        drawSierpinskiTriangle(0, 0, 800, 5);
+    </script>
+</body>
+</html>
