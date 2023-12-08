@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <title>Kezdőlap - QTMKZZ</title>
+        <link rel="stylesheet" href="style.css">
+        <meta content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <header>
+            <div class="container d-flex justify-between align-center">
+                <img src="images/logo.png" alt="">
+                <div class="menu">
+                    <a href="index.html" class="active">Kezdőlap</a>
+                    <a href="matekanalizis1.html">Matematika Analízis I.</a>
+                    <a href="progismeretek.html">Programtervezési ismeretek</a>
+                    <a href="progalap.html">Programozás alapjai</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="container">
+                    <div class="d-flex gap2rem">
+                        <div class="width50">
+                            <h1>Üdvözöllek a kezdőlapon!</h1>
+                            <p>Ennek a weboldalnak a célja bemutatni a Miskolci Egyetem 
+                                Gépészmérnöki és Informatikai Karának 3 oktatott tárgyát. 
+                                A tárgyak a következők:</p>
+                            <ul>
+                                <li><a href="index.html" class="active">Kezdőlap</a></li>
+                                <li><a href="matekanalizis1.html">Matematika Analízis I.</a></li>
+                                <li><a href="progismeretek.html">Programtervezési ismeretek</a></li>
+                                <li><a href="progalap.html">Programozás alapjai</a></li>
+                            </ul>
+                            <p class="marginb2rem">Ugyanezek a tárgyak megtalálhatóak a képernyő tetején elhelyezkedő menüben is.
+                                Hogy pontosan hogyan is készítettem el ezt a weboldalt, arról bővebben a Github-on
+                                lehet olvasni a Jegyzőkönyvben.
+                            </p>
+                            <a href="matekanalizis1.html" id="tosubject">Irány az első tantárgy</a>
+                        </div>
+                        <div class="width50">
+                            <div style="width: 75%; margin: auto;">
+                                <img src="images/homer2.webp" alt="" style="height: auto; width: 100%; border-radius: 0.5rem;">
+                                <div id="audioPlayerWrap">
+                                    <div id="audioPlayer" class="text-center">
+                                        <audio id="audio" src="audio/audio.mp3"></audio>
+                                        <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+                                        <div id="progressBar">
+                                            <div id="progressIndicator"></div>
+                                        </div>
+                                        <div style="margin-top: 1rem; display: flex; gap: 0.7rem; justify-content: center;">
+                                            <button id="playPause"><img src="images/icons/play.png" width="24" height="24"></button>
+                                            <button id="mute"><img src="images/icons/speaker.png" width="24" height="24"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>  
+            </section>
+        </main>
+        <footer class="text-center">
+            <p>&copy; Készítette: Bán Tamás József - QTMKZZ</p>
+        </footer>
+    </body>
+    <script src="script.js"></script>
+</html>

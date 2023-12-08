@@ -1,0 +1,148 @@
+body {
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: 0;
+    color: #212121;
+}
+p{
+    line-height: 1.5;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 1.2rem;
+}
+ul li a {
+    color: #212121;
+}
+header img {
+    border-radius: 0.25rem;
+    height: 32px;
+    width: auto;
+}
+header {
+    box-shadow: 2px -9px 99px -1px rgba(0,0,0,0.2);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+}
+.menu {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    height: fit-content;
+    margin-left: 2rem;
+}
+.menu a{
+    text-decoration: none;
+    color: #212121;
+    border: 1px solid #21212120;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    transition: 0.2s all;
+}
+.menu .active{
+    background-color: #f3f3f3;
+}
+.menu a:hover {
+    background-color: #f3f3f3;
+}
+section {
+    padding: 120px 0;
+}
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+}
+.text-center{
+    text-align: center;
+}
+h1{
+    font-size: 3rem;
+    margin-top: 0;
+}
+.d-flex{
+    display: flex;
+}
+.gap1rem{
+    gap: 1rem;
+}
+.gap2rem{
+    gap: 2rem;
+}
+.marginb2rem{
+    margin-bottom: 2rem;
+}
+.width50{
+    width: 50%;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+#tosubject{
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background-color: #2e4afe;
+    transition: 0.2s all ease-in-out;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    width: fit-content;
+}
+#tosubject:hover{
+    background-color: #2942e4;
+    box-shadow: 5px 5px 50px -1px #2135b730;
+}
+#backtoindex{
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: 1px solid #2e4afe;
+    transition: 0.2s all ease-in-out;
+    color: #2e4afe;
+    font-weight: 600;
+    display: flex;
+    width: fit-content;
+}
+#backtoindex:hover{
+    background-color: #ebedff;
+}
+
+
+#audioPlayerWrap{
+    border: 2px solid #f3f3f3;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+#audioPlayer {
+    width: 100%;
+}
+
+#progressBar {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    position: relative;
+    margin-top: 10px;
+}
+
+#progressIndicator {
+    height: 100%;
+    width: 0;
+    background-color: #4CAF50;
+    position: absolute;
+}
+#playPause, #mute {
+    background-color: #2e4afe;
+    border: 0;
+    border-radius: 10rem;
+    height: 44px;
+    width: 44px;
+}
