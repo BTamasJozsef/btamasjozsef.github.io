@@ -145,4 +145,5 @@ h1{
     border-radius: 10rem;
     height: 44px;
     width: 44px;
+    cursor: pointer;
 }
